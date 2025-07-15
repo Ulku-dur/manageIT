@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -110,7 +111,7 @@ const BlogPostSection1 = ({
                   target="_blank"
                   className="transition-opacity duration-200 fade-in hover:opacity-70"
                 >
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
                     className="h-full rounded-md w-full object-cover object-center"

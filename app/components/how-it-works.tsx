@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface Step {
   number: number;
@@ -85,7 +86,7 @@ export default function HowItWorks1({
       </div>
 
       <div className="flex-1 flex items-center justify-center max-lg:hidden">
-        <img
+        <Image
           src={imgUrl}
           alt={imgUrl.toString()}
           width={800}
